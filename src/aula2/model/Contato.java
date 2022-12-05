@@ -18,8 +18,8 @@ public class Contato {
 
 
     public Contato(String nome, String sobrenome) {
-        this.nome = nome;
-        this.sobrenome = sobrenome;
+        this(nome, sobrenome, "", TipoContato.Pessoal);
+
     }
 
     public Contato(String nome, String sobrenome, String email, TipoContato tipo) {
