@@ -1,6 +1,6 @@
-package aula2.model;
+package agendaContatos.model;
 
-import aula2.enums.TipoContato;
+import agendaContatos.enums.TipoContato;
 
 import java.util.List;
 import java.util.Objects;
@@ -22,7 +22,7 @@ public class Contato {
 
     }
 
-    public Contato(String nome, String sobrenome, String email, TipoContato tipo) {
+     public Contato(String nome, String sobrenome, String email, TipoContato tipo) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;

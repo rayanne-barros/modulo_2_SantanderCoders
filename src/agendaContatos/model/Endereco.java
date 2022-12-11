@@ -1,6 +1,6 @@
-package aula2.model;
+package agendaContatos.model;
 
-import aula2.enums.TipoEndereco;
+import agendaContatos.enums.TipoEndereco;
 
 public class Endereco {
     private TipoEndereco tipo;

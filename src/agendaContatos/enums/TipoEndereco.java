@@ -1,4 +1,4 @@
-package aula2.enums;
+package agendaContatos.enums;
 
 
 public enum TipoEndereco {

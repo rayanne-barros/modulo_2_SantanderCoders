@@ -1,6 +1,6 @@
-package aula2.model;
+package agendaContatos.model;
 
-import aula2.enums.TipoTelefone;
+import agendaContatos.enums.TipoTelefone;
 
 public class Telefone {
 

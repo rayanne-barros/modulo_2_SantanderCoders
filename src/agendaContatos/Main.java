@@ -1,17 +1,31 @@
-package aula2;
+package agendaContatos;
 
-import aula2.enums.TipoContato;
-import aula2.enums.TipoEndereco;
-import aula2.enums.TipoTelefone;
-import aula2.model.Contato;
-import aula2.model.Endereco;
-import aula2.model.Telefone;
+import agendaContatos.enums.TipoContato;
+import agendaContatos.enums.TipoEndereco;
+import agendaContatos.enums.TipoTelefone;
+import agendaContatos.model.Contato;
+import agendaContatos.model.Endereco;
+import agendaContatos.model.Telefone;
+import agendaContatos.ui.AgendaUI;
+
+import java.util.InputMismatchException;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Rodou!");
+
+        AgendaUI agendaui = new AgendaUI();
+
+        agendaui.menuInicial();
+        Agenda agenda = new Agenda();
 
         Contato maria = new Contato("Maria", "Silva ", "maria@email.com", TipoContato.Pessoal);
+
+        agenda.adicionar(maria);
+        List<Contato> lista = agenda.listar(0, 10);
+
+        System.out.println(lista);
+        System.out.println(lista.size());
 
 
         Endereco mariaEnde = new Endereco(TipoEndereco.Residencial, "Brasil", "55555000");
@@ -35,5 +49,6 @@ public class Main {
         System.out.println("|" + maria.getNomeCompleto() + "|");
         System.out.println("|" + mariaTel.getTelefoneCompleto() + "|");
         System.out.println("|" + mariaEnde.getEnderecoCompleto() + "|");
+
     }
 }
